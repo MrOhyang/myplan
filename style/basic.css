@@ -1,0 +1,315 @@
+/* Public */
+body,
+form,
+tr,
+td,
+input,
+textarea,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+div {
+  position: relative;
+}
+img {
+  border: none;
+}
+ul {
+  list-style-type: none;
+}
+em {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+/* Variable */
+/* Class */
+.d_clear {
+  clear: both;
+}
+/* Code */
+body {
+  position: relative;
+  background-color: #F6F6F6;
+}
+#myModal form.form_add {
+  display: block;
+  min-height: 100px;
+}
+#myModal form.form_add table.table1 {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#myModal form.form_add table.table1 tr td {
+  font-size: 15px;
+  padding: 8px 10px;
+}
+#myModal form.form_add table.table2 {
+  margin-left: 30px;
+}
+#myModal form.form_add table.table2 tr td {
+  font-size: 15px;
+  padding: 8px 10px;
+}
+#myModal form.form_add table.table2 tr td input {
+  width: 60px;
+}
+#myModal form.form_add table.table3 {
+  margin-left: 30px;
+}
+#myModal form.form_add table.table3 tr td {
+  font-size: 15px;
+  padding: 8px 10px;
+}
+#myModal form.form_add table.table4 {
+  margin-left: 30px;
+}
+#myModal form.form_add table.table4 tr td {
+  font-size: 15px;
+  padding: 8px 10px;
+}
+#myModal form.form_add table.table4 tr td input {
+  width: 110px;
+}
+#myModal form.form_add input#sub1 {
+  display: none;
+}
+#myModal2 form.form_add {
+  display: block;
+  min-height: 100px;
+}
+#myModal2 form.form_add table.table1 {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#myModal2 form.form_add table.table1 tr td {
+  font-size: 15px;
+  padding: 8px 10px;
+}
+#myModal2 form.form_add input#sub2 {
+  display: none;
+}
+#d_top {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1000px;
+  height: auto;
+}
+#d_top #d_add,
+#d_top #d_add2 {
+  overflow: hidden;
+  position: relative;
+  display: inline;
+  float: left;
+  width: 90px;
+  height: 110px;
+  border: 1px #CCC solid;
+  border-radius: 8px;
+  background-color: #F7F7F7;
+  cursor: pointer;
+}
+#d_top #d_add img,
+#d_top #d_add2 img {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#d_top #d_add p,
+#d_top #d_add2 p {
+  left: 16px;
+  bottom: 10px;
+  position: absolute;
+}
+#d_top #d_add2 {
+  margin-left: 16px;
+  width: 120px;
+  height: 126px;
+}
+#d_top #d_add2 img {
+  margin-left: 36px;
+}
+#d_top #d_add2 p {
+  left: 0;
+  padding: 0 8px;
+  text-align: center;
+}
+#d_top #d_add:hover,
+#d_top #d_add2:hover {
+  background-color: #FFF;
+}
+#mid {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 1000px;
+  border: 1px #CCC solid;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+#mid #d_title {
+  height: 40px;
+  background-color: #E9E9E9;
+  border-bottom: 1px #CCC solid;
+}
+#mid #d_title h1 {
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-indent: 10px;
+}
+#mid #d_cont {
+  min-height: 100px;
+  background-color: #FFF;
+}
+#mid #d_cont #cont_top {
+  padding: 10px 40px;
+}
+#mid #d_cont #cont_top div {
+  font-size: 16px;
+  font-weight: bold;
+}
+#mid #d_cont .d_record {
+  padding: 12px 40px;
+}
+#mid #d_cont .d_record div {
+  font-size: 15px;
+}
+#mid #d_cont .d_record .col-xs-10 {
+  border-left: 1px #DDD dashed;
+}
+#mid #d_cont .d_record .col-xs-10 table {
+  margin: 0;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td1 {
+  width: 50%;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td2 {
+  width: 20%;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td3 {
+  width: 11%;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td4 {
+  position: relative;
+  width: 8%;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td4 em.em_up,
+#mid #d_cont .d_record .col-xs-10 table tr td.td4 em.em_down {
+  display: none;
+  position: absolute;
+  top: 11px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 13px;
+  font-family: "宋体";
+  text-align: center;
+  background-color: #F0F0F0;
+  /*border: 1px #D8D8D8 solid;*/
+  border: 1px #F98 solid;
+  border-radius: 3px;
+  color: red;
+  cursor: pointer;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td4 em.em_up {
+  right: 14px;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td4 em.em_down {
+  left: -14px;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td4 em:hover {
+  border: 1px #F76 solid;
+  background-color: #FA9;
+  color: #FFF;
+}
+#mid #d_cont .d_record .col-xs-10 table tr td.td5 {
+  width: 8%;
+}
+#mid #d_cont .d_record .col-xs-10 table tr:hover td.td4 em {
+  display: block;
+}
+#mid #d_page ul.ul_toolbar {
+  padding: 10px 10px;
+  min-height: 54px;
+}
+#mid #d_page ul.ul_toolbar li.li_group {
+  overflow: hidden;
+  display: inline;
+  float: left;
+  text-align: center;
+  border: 1px #DDD solid;
+  border-left: none;
+}
+#mid #d_page ul.ul_toolbar li.li_group a {
+  display: block;
+  padding: 0 12px;
+  min-width: 36px;
+  min-height: 34px;
+  line-height: 34px;
+  background-color: #F5F5F5;
+  color: #000;
+}
+#mid #d_page ul.ul_toolbar li.li_group a:hover {
+  background-color: #EEEEEE;
+  color: #124;
+}
+#d_count {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 1000px;
+  border: 1px #CCC solid;
+  border-radius: 10px;
+}
+#d_count #d_count_title {
+  height: 40px;
+  background-color: #00A2E8;
+  border-bottom: 1px #CCC solid;
+}
+#d_count #d_count_title h1 {
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-indent: 10px;
+  color: #FFF;
+}
+#d_count #d_count_cont {
+  min-height: 400px;
+  background-color: #FFF;
+}
+#d_count #d_count_cont .row .col-xs-1,
+#d_count #d_count_cont .row .col-xs-2,
+#d_count #d_count_cont .row .col-xs-3,
+#d_count #d_count_cont .row .col-xs-4,
+#d_count #d_count_cont .row .col-xs-5,
+#d_count #d_count_cont .row .col-xs-6,
+#d_count #d_count_cont .row .col-xs-7,
+#d_count #d_count_cont .row .col-xs-8,
+#d_count #d_count_cont .row .col-xs-9,
+#d_count #d_count_cont .row .col-xs-10,
+#d_count #d_count_cont .row .col-xs-11,
+#d_count #d_count_cont .row .col-xs-12 {
+  margin: 10px 0;
+  height: 400px;
+}

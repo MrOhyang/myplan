@@ -78,8 +78,6 @@ $(function(){
 				var newseries = NewSeriesArray(partname,response.arrPart,etype);
 				var newxaxis = NewXaxis(arrDate,etype);
 
-				console.log(arrDate);
-
 				// 使用
 			    require(
 			        [

@@ -53,7 +53,7 @@ $(function(){
 		var _fitname = $(this).parent().prev().prev().prev().text();
 		var _date = $(this).parent().parent().parent().parent().parent().prev().text();
 		
-		UpDownAjax(_fitname,_gp,_date,1,$(this));		
+		UpDownAjax(_fitname,_gp,_date,1,$(this));
 	});
 
 	$("table#table_allcont").delegate("em.em_down","click",function(){
@@ -84,5 +84,40 @@ $(function(){
 			}
 		});
 	}
+
+	$("table#table_allcont").delegate("em.em_delete","click",function(){
+		var _fitname = $(this).parent().parent().children("td").eq(0).text();
+		var _num = $(this).parent().prev().prev().text();
+		var _gp = $(this).parent().prev().children("p").text();
+		var _date = $(this).parent().parent().parent().parent().parent().prev().text();
+
+		var deledom = $(this).parent().parent();
+
+		$.ajax({
+			type : 'POST',
+			url : 'ajax/delete.php',
+			data : {
+				fitname : _fitname,
+				num : _num,
+				gp : _gp,
+				date : _date
+			},
+			success : function(response,status,xhr){
+				if(response==1){
+					if( deledom.parent().children("tr").length == 1 ){
+						var temp = deledom.parent().parent().parent().parent().fadeOut("500");
+					}else{
+						var temp = deledom;
+					}
+					temp.fadeOut("500");
+					setTimeout(function(){
+						temp.remove();
+					},500);
+				}
+			}
+		});
+
+		console.log(_fitname,_num,_gp,_date);
+	});
 
 })

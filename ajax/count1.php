@@ -15,7 +15,8 @@ $temp = substr($temp, 0,strlen($temp)-1) . ')';
 
 $_result = _query("	SELECT items.times,items.num,items.gp,fit.part
 					FROM items,fit
-					WHERE items.fit_id=fit.fit_id AND fit.part in ".$temp."
+					WHERE items.fit_id=fit.fit_id AND 
+						  fit.part in ".$temp."
 					ORDER BY times DESC
 					");
 

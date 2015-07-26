@@ -289,7 +289,10 @@ $_data[$i]->myRever();
 							<p><?php echo $variable2['gp']; ?></p>
 							<em class="em_up">+</em>
 						</td>
-						<td class="td5"><?php echo $variable2['place']; ?></td>
+						<td class="td5">
+							<p><?php echo $variable2['place']; ?></p>
+							<em class="em_delete">×</em>
+						</td>
 					</tr>
 					<?php } ?>
 

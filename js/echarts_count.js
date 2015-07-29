@@ -64,7 +64,8 @@ $(function(){
 			type:'POST',
 			url:'ajax/count1.php',
 			data:{
-				parts : partname
+				parts : partname,
+				datenum : 6
 			},
 			dataType:'json',
 			success:function (response, status, xhr) {

@@ -13,10 +13,19 @@ foreach ($_POST['parts'] as $value) {
 
 $temp = substr($temp, 0,strlen($temp)-1) . ')';
 
+$datenum = intval($_POST['datenum'])-1;
+
+$_row = _fetch_array("	SELECT DISTINCT times
+						FROM items
+						ORDER BY times DESC
+						LIMIT $datenum,1
+						");
+
 $_result = _query("	SELECT items.times,items.num,items.gp,fit.part
 					FROM items,fit
 					WHERE items.fit_id=fit.fit_id AND 
-						  fit.part in ".$temp."
+						  fit.part in ".$temp." AND
+						  items.times>='{$_row['times']}'
 					ORDER BY times DESC
 					");
 
